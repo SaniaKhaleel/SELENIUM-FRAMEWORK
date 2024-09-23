@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Sep 08 21:17:01 IST 2024</td>
+<td>Started on:</td><td>Mon Sep 23 15:28:11 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>152 seconds (152094 ms)</td>
+<tr><td>Total time:</td><td>104 seconds (104672 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,35 +76,35 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='rahulshettyacademy.tests.SubmitOrderTest.OrderHistoryTest()'><b>OrderHistoryTest</b><br>Test class: rahulshettyacademy.tests.SubmitOrderTest</td>
-<td></td>
-<td>6</td>
-<td>rahulshettyacademy.tests.SubmitOrderTest@43301423</td></tr>
-<tr>
-<td title='rahulshettyacademy.tests.ErrorValidationsTest.LoginErrorValidation()'><b>LoginErrorValidation</b><br>Test class: rahulshettyacademy.tests.ErrorValidationsTest</td>
-<td></td>
-<td>3</td>
-<td>rahulshettyacademy.tests.ErrorValidationsTest@318ba8c8</td></tr>
-<tr>
-<td title='rahulshettyacademy.tests.SubmitOrderTest.submitOrder()'><b>submitOrder</b><br>Test class: rahulshettyacademy.tests.SubmitOrderTest<br>Parameters: {password=Demo@123, product=ADIDAS ORIGINAL, email=darshaahmed836@gmail.com}</td>
-<td></td>
-<td>11</td>
-<td>rahulshettyacademy.tests.SubmitOrderTest@43301423</td></tr>
-<tr>
 <td title='cucumber.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive Test of Submitting the order", "Purchase the order from Ecommerce Website"</td>
-<td></td>
-<td>34</td>
-<td>cucumber.TestNGTestRunner@2ddc8ecb</td></tr>
-<tr>
-<td title='rahulshettyacademy.tests.SubmitOrderTest.submitOrder()'><b>submitOrder</b><br>Test class: rahulshettyacademy.tests.SubmitOrderTest<br>Parameters: {password=Sania123, product=ZARA COAT 3, email=webtesting.sania@gmail.com}</td>
-<td></td>
-<td>11</td>
-<td>rahulshettyacademy.tests.SubmitOrderTest@43301423</td></tr>
-<tr>
-<td title='rahulshettyacademy.tests.ErrorValidationsTest.ProductErrorValidation()'><b>ProductErrorValidation</b><br>Test class: rahulshettyacademy.tests.ErrorValidationsTest</td>
-<td></td>
-<td>8</td>
-<td>rahulshettyacademy.tests.ErrorValidationsTest@318ba8c8</td></tr>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: #toast-container (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\MJ\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51775}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51775/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 19016a6317b048feef8f72030b6c2f15
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at rahulshettyacademy.AbstractComponents.AbstractComponent.waitForElementToAppear(AbstractComponent.java:37)
+	at rahulshettyacademy.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:53)
+	at rahulshettyacademy.stepDefinitions.StepDefinitionImpl.i_add_product_to_cart(StepDefinitionImpl.java:43)
+	at ✽.I add product ZARA COAT 3 to Cart(file:///C:/SeleniumFrameworkDesign/src/test/java/cucumber/SubmitOrder.feature:13)
+</pre></div><a href='#' onClick='toggleBox("stack-trace199041063", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace199041063'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: #toast-container (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\MJ\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51775}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51775/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 19016a6317b048feef8f72030b6c2f15
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at rahulshettyacademy.AbstractComponents.AbstractComponent.waitForElementToAppear(AbstractComponent.java:37)
+	at rahulshettyacademy.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:53)
+	at rahulshettyacademy.stepDefinitions.StepDefinitionImpl.i_add_product_to_cart(StepDefinitionImpl.java:43)
+	at ✽.I add product ZARA COAT 3 to Cart(file:///C:/SeleniumFrameworkDesign/src/test/java/cucumber/SubmitOrder.feature:13)
+</pre></div></td>
+<td>100</td>
+<td>cucumber.TestNGTestRunner@15eb5ee5</td></tr>
 </table><p>
 </body>
 </html>

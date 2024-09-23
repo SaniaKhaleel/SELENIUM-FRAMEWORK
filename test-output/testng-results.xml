@@ -1,63 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="1" ignored="1" total="7" passed="5" failed="0" skipped="0">
+<testng-results retried="1" ignored="1" total="4" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-08T20:46:12 IST" name="Suite" finished-at="2024-09-08T20:48:28 IST" duration-ms="135750">
+  <suite started-at="2024-09-22T14:20:23 IST" name="Default suite" finished-at="2024-09-22T14:23:18 IST" duration-ms="175205">
     <groups>
       <group name="ErrorHandling">
-        <method signature="ErrorValidationsTest.LoginErrorValidation()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@4d6025c5]" name="LoginErrorValidation" class="rahulshettyacademy.tests.ErrorValidationsTest"/>
+        <method signature="ErrorValidationsTest.LoginErrorValidation()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@815b41f]" name="LoginErrorValidation" class="rahulshettyacademy.tests.ErrorValidationsTest"/>
       </group> <!-- ErrorHandling -->
-      <group name="Purchase">
-        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@1a5b6f42]" name="submitOrder" class="rahulshettyacademy.tests.SubmitOrderTest"/>
-      </group> <!-- Purchase -->
     </groups>
-    <test started-at="2024-09-08T20:46:12 IST" name="Error Validations Test" finished-at="2024-09-08T20:48:24 IST" duration-ms="131309">
+    <test started-at="2024-09-22T14:20:23 IST" name="Default test" finished-at="2024-09-22T14:23:18 IST" duration-ms="175205">
       <class name="rahulshettyacademy.tests.ErrorValidationsTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@4d6025c5]" started-at="2024-09-08T20:46:13 IST" name="launchApplication" finished-at="2024-09-08T20:46:43 IST" duration-ms="30467" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@815b41f]" started-at="2024-09-22T14:20:23 IST" name="launchApplication" finished-at="2024-09-22T14:21:22 IST" duration-ms="58616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method retried="true" signature="LoginErrorValidation()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@4d6025c5]" started-at="2024-09-08T20:46:43 IST" name="LoginErrorValidation" finished-at="2024-09-08T20:47:10 IST" duration-ms="27208" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method retried="true" signature="LoginErrorValidation()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@815b41f]" started-at="2024-09-22T14:21:22 IST" name="LoginErrorValidation" finished-at="2024-09-22T14:21:43 IST" duration-ms="21206" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: [class*='flyInOut']' (tried for 10 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.cssSelector: [class*='flyInOut']' (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at rahulshettyacademy.AbstractComponents.AbstractComponent.waitForWebElementToAppear(AbstractComponent.java:44)
-at rahulshettyacademy.pageobjects.LandingPage.getErrorMessage(LandingPage.java:52)
-at rahulshettyacademy.tests.ErrorValidationsTest.LoginErrorValidation(ErrorValidationsTest.java:26)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[class*='flyInOut']"}
-  (Session info: chrome=128.0.6613.120)
+              <![CDATA[Unable to locate element: [class*='flyInOut']
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.23.0', revision: '4df0a231af'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [093a4ad538d414183f25dafb2138cf5b, findElement {value=[class*='flyInOut'], using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\MJ\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54359}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54359/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 093a4ad538d414183f25dafb2138cf5b
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2e4f7671-6453-476c-abb6-c5d89899287a, findElement {using=css selector, value=[class*='flyInOut']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0.1, moz:accessibilityChecks: false, moz:buildID: 20240913135723, moz:debuggerAddress: 127.0.0.1:46505, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9188, moz:profile: C:\Users\MJ\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:46505/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 2e4f7671-6453-476c-abb6-c5d89899287a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: [class*='flyInOut']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2e4f7671-6453-476c-abb6-c5d89899287a, findElement {using=css selector, value=[class*='flyInOut']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 130.0.1, moz:accessibilityChecks: false, moz:buildID: 20240913135723, moz:debuggerAddress: 127.0.0.1:46505, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9188, moz:profile: C:\Users\MJ\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:46505/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 2e4f7671-6453-476c-abb6-c5d89899287a
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -74,101 +51,70 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-... 23 more
+at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
+at rahulshettyacademy.pageobjects.LandingPage.getErrorMessage(LandingPage.java:53)
+at rahulshettyacademy.tests.ErrorValidationsTest.LoginErrorValidation(ErrorValidationsTest.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@4d6025c5]" started-at="2024-09-08T20:47:10 IST" name="tearDown" finished-at="2024-09-08T20:47:13 IST" duration-ms="2559" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@815b41f]" started-at="2024-09-22T14:21:44 IST" name="tearDown" finished-at="2024-09-22T14:21:52 IST" duration-ms="8805" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@4d6025c5]" started-at="2024-09-08T20:47:13 IST" name="launchApplication" finished-at="2024-09-08T20:47:34 IST" duration-ms="21324" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@815b41f]" started-at="2024-09-22T14:21:52 IST" name="launchApplication" finished-at="2024-09-22T14:22:22 IST" duration-ms="29285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="LoginErrorValidation()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@4d6025c5]" started-at="2024-09-08T20:47:34 IST" name="LoginErrorValidation" finished-at="2024-09-08T20:47:41 IST" duration-ms="7349" status="PASS">
+        <test-method signature="LoginErrorValidation()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@815b41f]" started-at="2024-09-22T14:22:22 IST" name="LoginErrorValidation" finished-at="2024-09-22T14:22:24 IST" duration-ms="2826" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@4d6025c5]" started-at="2024-09-08T20:47:41 IST" name="tearDown" finished-at="2024-09-08T20:47:47 IST" duration-ms="5531" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@815b41f]" started-at="2024-09-22T14:22:25 IST" name="tearDown" finished-at="2024-09-22T14:22:35 IST" duration-ms="10754" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@4d6025c5]" started-at="2024-09-08T20:47:47 IST" name="launchApplication" finished-at="2024-09-08T20:48:06 IST" duration-ms="18787" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@815b41f]" started-at="2024-09-22T14:22:35 IST" name="launchApplication" finished-at="2024-09-22T14:23:01 IST" duration-ms="25668" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="ProductErrorValidation()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@4d6025c5]" started-at="2024-09-08T20:48:06 IST" name="ProductErrorValidation" finished-at="2024-09-08T20:48:19 IST" duration-ms="13425" status="PASS">
+        <test-method signature="ProductErrorValidation()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@815b41f]" started-at="2024-09-22T14:23:01 IST" name="ProductErrorValidation" finished-at="2024-09-22T14:23:10 IST" duration-ms="8786" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@4d6025c5]" started-at="2024-09-08T20:48:19 IST" name="tearDown" finished-at="2024-09-08T20:48:24 IST" duration-ms="4279" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationsTest@815b41f]" started-at="2024-09-22T14:23:10 IST" name="tearDown" finished-at="2024-09-22T14:23:18 IST" duration-ms="8403" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- rahulshettyacademy.tests.ErrorValidationsTest -->
-    </test> <!-- Error Validations Test -->
-    <test started-at="2024-09-08T20:46:12 IST" name="Submit Order Test" finished-at="2024-09-08T20:48:28 IST" duration-ms="135750">
-      <class name="rahulshettyacademy.tests.SubmitOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@1a5b6f42]" started-at="2024-09-08T20:46:14 IST" name="launchApplication" finished-at="2024-09-08T20:46:45 IST" duration-ms="31350" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@1a5b6f42]" started-at="2024-09-08T20:46:45 IST" name="submitOrder" data-provider="getData" finished-at="2024-09-08T20:47:08 IST" duration-ms="22181" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Sania123, product=ZARA COAT 3, email=webtesting.sania@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@1a5b6f42]" started-at="2024-09-08T20:47:08 IST" name="tearDown" finished-at="2024-09-08T20:47:10 IST" duration-ms="2000" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@1a5b6f42]" started-at="2024-09-08T20:47:10 IST" name="launchApplication" finished-at="2024-09-08T20:47:39 IST" duration-ms="28888" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@1a5b6f42]" started-at="2024-09-08T20:47:39 IST" name="submitOrder" data-provider="getData" finished-at="2024-09-08T20:47:58 IST" duration-ms="19810" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Demo@123, product=ADIDAS ORIGINAL, email=darshaahmed836@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@1a5b6f42]" started-at="2024-09-08T20:47:58 IST" name="tearDown" finished-at="2024-09-08T20:48:01 IST" duration-ms="2189" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@1a5b6f42]" started-at="2024-09-08T20:48:01 IST" name="launchApplication" finished-at="2024-09-08T20:48:20 IST" duration-ms="19336" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="OrderHistoryTest()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@1a5b6f42]" started-at="2024-09-08T20:48:20 IST" name="OrderHistoryTest" finished-at="2024-09-08T20:48:25 IST" depends-on-methods="rahulshettyacademy.tests.SubmitOrderTest.submitOrder" duration-ms="5246" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OrderHistoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@1a5b6f42]" started-at="2024-09-08T20:48:25 IST" name="tearDown" finished-at="2024-09-08T20:48:28 IST" duration-ms="2798" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- rahulshettyacademy.tests.SubmitOrderTest -->
-    </test> <!-- Submit Order Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

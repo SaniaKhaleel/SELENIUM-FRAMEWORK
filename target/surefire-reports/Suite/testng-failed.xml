@@ -4,18 +4,6 @@
   <listeners>
     <listener class-name="rahulshettyacademy.TestComponents.Listeners"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Submit Order Test(failed)" verbose="0">
-    <classes>
-      <class name="rahulshettyacademy.tests.SubmitOrderTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="OrderHistoryTest"/>
-          <include name="submitOrder"/>
-          <include name="launchApplication"/>
-        </methods>
-      </class> <!-- rahulshettyacademy.tests.SubmitOrderTest -->
-    </classes>
-  </test> <!-- Submit Order Test(failed) -->
   <test thread-count="5" parallel="tests" name="Error Validations Test(failed)" verbose="0">
     <classes>
       <class name="rahulshettyacademy.tests.ErrorValidationsTest">
